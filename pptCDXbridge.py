@@ -1,3 +1,4 @@
+# Copyright (c) 2021 mmaskeri
 from AppKit import NSPasteboard, NSRange, NSData, NSMakeRange, NSNotFound
 
 pb = NSPasteboard.generalPasteboard()
