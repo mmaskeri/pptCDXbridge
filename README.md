@@ -5,7 +5,7 @@ Generation and editing of slide presentations containing ChemDraw schemes betwee
 In this instance PowerPoint (like Keynote, see github.com/mmaskeri/keyClip) strips the chemical metadata from the PDF image of the scheme and serves it to the pasteboard as an NSPasteboardType that is unrecognizable by ChemDraw. pptCDXbridge searches the pasteboard for CDX data and re-serves it to the pasteboard in a Type that ChemDraw can use. A user can then simply paste a fully-editable scheme into ChemDraw.
 
 pptCDXbridge consists of two components:
-- **pptCDXbridge.py:** general tool that searches the pasteboard for binary CDX data and returns it to the pasteboard as a `com.perkinelmer.chemdraw.cdx-clipboard` object
+- **pptCDXbridge.py:** general tool that searches the pasteboard for binary CDX data and returns it to the pasteboard as an NSData object with type `com.perkinelmer.chemdraw.cdx-clipboard`
 - **pptCDXbridge_workflow.workflow:** macOS service that copies a selected (ungrouped) PowerPoint object to the pasteboard and runs pptCDXbridge.py
 
 ## Setup
