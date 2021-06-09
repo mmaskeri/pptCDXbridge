@@ -2,7 +2,7 @@
 
 Generation and editing of slide presentations containing ChemDraw schemes between Windows and macOS is occasionally stymied by the roundtrip editing problem. For PowerPoint presentations created and edited on Windows, and correspondingly on macOS, roundtrip editing is easily accomplished using the clipboard. Presentations made on Windows and opened on macOS, however, can present the frustrating scenario in which a scheme copied from PowerPoint into ChemDraw produces an uneditable PDF graphic.
 
-In this instance PowerPoint (like Keynote, see github.com/mmaskeri/keyClip) strips the chemical metadata from the PDF image of the scheme and serves it to the pasteboard as an NSPasteboardType that is unrecognizable by ChemDraw. pptCDXbridge searches the pasteboard for CDX data and re-serves it to the pasteboard in a Type that ChemDraw can use. A user can then simply paste a fully-editable scheme into ChemDraw.
+In this instance PowerPoint (like Keynote, see github.com/mmaskeri/keyClip) strips the chemical metadata from the PDF image of the scheme and serves it to the pasteboard as an NSPasteboardType that is unrecognizable by ChemDraw. pptCDXbridge searches the pasteboard for CDX data and re-serves it to the pasteboard in a type that ChemDraw can use. A user can then simply paste a fully-editable scheme into ChemDraw.
 
 pptCDXbridge consists of two components:
 - **pptCDXbridge.py:** general tool that searches the pasteboard for binary CDX data and returns it to the pasteboard as an NSData object with type `com.perkinelmer.chemdraw.cdx-clipboard`
