@@ -17,6 +17,11 @@ pptCDXbridge.py can be run on its own as long as the pasteboard has been populat
    - Under General, check the box next to pptCDXbridge_workflow
    - Click "none" and press key combination for shortcut. Suggestion is option-⌘-c
      - This shortcut must not collide with any system/PowerPoint shortcuts
+4. Give Accessibility privileges to Automator
+    - Open System Preferences > Security & Privacy > Privacy
+    - Open the "Accessibility" panel from the left list
+    - Add the app `Automator` to the right list, checking the box
+      - Additional Accessibility privileges may need to be granted to ChemDraw
 
 ## Usage
 Ungroup ChemDraw object in PowerPoint if necessary. Select object, then input keyboard shortcut established in Setup step 3 above. Script will run, briefly displaying small rotating gear in menu bar. Paste as normal into ChemDraw (⌘-v).
