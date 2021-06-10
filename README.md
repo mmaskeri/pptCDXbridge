@@ -28,4 +28,7 @@ Ungroup ChemDraw object in PowerPoint if necessary. Select object, then input ke
 
 If pptCDXbridge does not find any binary CDX data on the pasteboard, the pasteboard will be unchanged.
 
+## Thanks
+Thanks to JLZ for testing!
+
 (c) 2021 M. Maskeri, see LICENSE (MIT)
